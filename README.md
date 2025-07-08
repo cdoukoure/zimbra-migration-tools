@@ -45,3 +45,26 @@ Ce dépôt rassemble un ensemble d’outils et scripts shell conçus pour automa
 ```bash
 git clone https://github.com/cdoukoure/zimbra-migration-tools.git
 cd zimbra-migration-tools
+```
+
+---
+
+## Licence
+
+Ce script est distribué sous la licence **GNU General Public License version 3 (GPL v3)**.
+
+Vous pouvez redistribuer et/ou modifier ce script selon les termes de la licence GPL v3, telle que publiée par la Free Software Foundation :
+[https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+
+---
+
+## Clause de non-responsabilité
+
+Ce script est fourni **"tel quel"**, sans aucune garantie d’aucune sorte, expresse ou implicite, y compris, mais sans s’y limiter, les garanties de qualité marchande, d’adaptation à un usage particulier, ou d’absence de contrefaçon.
+
+L’utilisateur exécute ce script à ses propres risques. En aucun cas, l’auteur ne pourra être tenu responsable des dommages directs ou indirects, pertes de données, profits ou toute autre perte découlant de l’utilisation ou de l’impossibilité d’utiliser ce script.
+
+L’utilisateur reconnaît avoir lu et compris cette clause et accepte de ne pas tenir l’auteur responsable de toute conséquence liée à l’usage de ce script.
+
+---
+
