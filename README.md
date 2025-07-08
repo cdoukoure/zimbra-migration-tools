@@ -46,6 +46,24 @@ Ce dépôt rassemble un ensemble d’outils et scripts shell conçus pour automa
 git clone https://github.com/cdoukoure/zimbra-migration-tools.git
 cd zimbra-migration-tools
 ```
+Les scripts doivent etre exécutés par numéro d'ordre dans le nom du fichier.
+
+```
+├───1- Sur_Serveurs_Source_MBOX
+│       0_zimbra_export_accounts_v12.sh
+│       1_zimbra_generate_import_scripts.sh
+│       2_zimbra_export_accounts_mailbox.sh # Voir la note plus bas
+│
+└───2- Sur_Serveurs_Destination_MBOX
+        0_zimbra_import_accounts.sh
+        1_zimbra_domain_admin.sh
+        2_zimbra_remote_export_mailbox.sh 
+        3_zimbra_import_accounts_mailbox.sh
+        README.md
+```
+
+Pour l'export des mailbox sur le serveur source, lancer `2_zimbra_export_accounts_mailbox.sh`. Ce script utilise `zmmailbox` pour l'export des mailbox; Vous aurez besion de `rsync` pour les transférer sur le serveur de destination. <br>
+Sinon vous pouvez utiliser directement `2_zimbra_remote_export_mailbox.sh` depuis le serveur de destination. Plus besion de `rsync` dans ce cas.
 
 ---
 

@@ -31,11 +31,11 @@ Ce script Bash permet d’exporter en masse les boîtes mail Zimbra via l’API 
 
 ## Installation
 
-1. Copier le script `zimbra_export_massive.sh` sur le serveur ou machine client.
+1. Copier le script `2_zimbra_remote_export_mailbox.sh` sur le serveur ou machine client.
 2. Rendre exécutable :
 
 ```bash
-chmod +x zimbra_export_massive.sh
+chmod +x 2_zimbra_remote_export_mailbox.sh
 ```
 
 3. Préparer un fichier utilisateur (`users.txt`), par exemple :
@@ -52,7 +52,7 @@ user4@domain.com
 ## Usage
 
 ```bash
-./zimbra_export_massive.sh -z IP_OU_FQDN -a ADMIN_USER -p ADMIN_PASS [options]
+./2_zimbra_remote_export_mailbox.sh -z IP_OU_FQDN -a ADMIN_USER -p ADMIN_PASS [options]
 ```
 
 ### Options
@@ -74,7 +74,7 @@ user4@domain.com
 ### Exemple simple
 
 ```bash
-./zimbra_export_massive.sh -z 192.168.1.10 -a admin@domain.com -p secret -e 15/07/2025
+./2_zimbra_remote_export_mailbox.sh -z 192.168.1.10 -a admin@domain.com -p secret -e 15/07/2025
 ```
 
 ---
@@ -82,7 +82,7 @@ user4@domain.com
 ### Exemple avec parallélisation et dossier custom
 
 ```bash
-nohup ./zimbra_export_massive.sh -z zimbra.example.com -a admin@example.com -p secretpass -o /data/exports -j 20 > export_$(date +%F_%H%M).log 2>&1 &
+nohup ./2_zimbra_remote_export_mailbox.sh -z zimbra.example.com -a admin@example.com -p secretpass -o /data/exports -j 20 > export_$(date +%F_%H%M).log 2>&1 &
 ```
 
 ---
